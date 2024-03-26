@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     /*
     spashscreen
-
     2.03.2024
     Суриков Владислав
      */
