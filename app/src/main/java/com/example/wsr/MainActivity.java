@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     /*spashscreen
     26.03.2024
     Суриков Владислав
+
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
