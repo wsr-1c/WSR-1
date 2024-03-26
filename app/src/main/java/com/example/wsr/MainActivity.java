@@ -13,8 +13,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*spashscreen
-    26.03.2024
+    /*
+    spashscreen
+
+    2.03.2024
     Суриков Владислав
 
      */
