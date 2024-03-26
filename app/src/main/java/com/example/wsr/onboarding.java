@@ -51,8 +51,8 @@ public class onboarding extends AppCompatActivity {
         });
     }
     public void onb5(){
-        Intent onb3 = null;
-        startActivity(onb3);
+        Intent intent = new Intent(onboarding.this, onb3.class);
+
     }
 
 }
