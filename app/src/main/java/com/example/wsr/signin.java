@@ -25,6 +25,14 @@ public class signin extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signin);
         final TextView singup = requireViewById(R.id.sig);
+        final TextView fass = requireViewById(R.id.fpass);
+        singup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(signin.this, fogotpass.class);
+                startActivity(intent); // переход на смену пароля
+            }
+        });
         singup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
