@@ -1,8 +1,11 @@
 package com.example.wsr;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,10 +15,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.wsr_3.R;
+import com.google.android.material.textfield.TextInputEditText;
 
-public class signin extends AppCompatActivity {
+public class fogotpass extends AppCompatActivity {
     /*
-    окно входа
+    окно забыли пароль
     26.03.2024
     Суриков Владислав
      */
@@ -23,13 +27,21 @@ public class signin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_signin);
-        final TextView singup = requireViewById(R.id.sig);
-        singup.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_fogotpass);
+        final TextView siga = requireViewById(R.id.sig);
+        final TextView ema = requireViewById(R.id.emas);
+        final Button otp = requireViewById(R.id.Otpv);
+        if (ema.getText() != null)
+        {
+            otp.setBackground(Drawable.createFromPath("#0560FA"));
+            boolean b = true;
+            otp.setEnabled(b);
+        }
+        siga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(signin.this, signup.class);
-                startActivity(intent); // переход на регестрацию
+                Intent intent = new Intent(fogotpass.this, signin.class);
+                startActivity(intent); // переход на вход
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
