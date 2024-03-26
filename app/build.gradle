@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.wsr'
+    namespace 'com.example.wsr_3'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.wsr"
+        applicationId "com.example.wsr_3"
         minSdk 30
         targetSdk 34
         versionCode 1

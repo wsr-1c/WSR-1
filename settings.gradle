@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "wsr"
+rootProject.name = "WSR-3"
 include ':app'
