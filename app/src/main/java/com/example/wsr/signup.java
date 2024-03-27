@@ -24,7 +24,14 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup);
-        final Button signinn = requireViewById(R.id.button4);
+        final Button signinn = requireViewById(R.id.button4), home = requireViewById(R.id.Otpv);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(signup.this, Home.class);
+                startActivity(intent);
+            }
+        });
         signinn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
