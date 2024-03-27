@@ -31,6 +31,7 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Profile.this, signin.class);
+                startActivity(intent);
             }
         });
         noti.setOnClickListener(new View.OnClickListener() {
