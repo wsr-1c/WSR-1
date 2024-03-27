@@ -31,7 +31,7 @@ public class signin extends AppCompatActivity {
         logb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent intent = new Intent(signin.this, nav.class);
+            Intent intent = new Intent(signin.this, Home.class);
             startActivity(intent);
             }
         });
@@ -59,7 +59,7 @@ public class signin extends AppCompatActivity {
         });
     }
     public void loginn(View view){
-        Intent intent = new Intent(signin.this, nav.class);
+        Intent intent = new Intent(signin.this, Home.class);
         startActivity(intent);
     }
 }
