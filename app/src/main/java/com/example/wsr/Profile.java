@@ -22,7 +22,13 @@ public class Profile extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
         final ImageButton pro = requireViewById(R.id.imageButton4), ho = requireViewById(R.id.imageButton2);
-        final ConstraintLayout ca = requireViewById(R.id.Card), noti = requireViewById(R.id.not);
+        final ConstraintLayout ca = requireViewById(R.id.Card), noti = requireViewById(R.id.not), log = requireViewById(R.id.logout);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, signin.class);
+            }
+        });
         noti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
