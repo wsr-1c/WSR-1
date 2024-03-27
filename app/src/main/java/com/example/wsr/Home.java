@@ -15,7 +15,11 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.wsr_3.R;
 
 public class Home extends AppCompatActivity {
-
+    /*
+      домашняя
+      26.03.2024
+      Суриков Владислав
+       */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

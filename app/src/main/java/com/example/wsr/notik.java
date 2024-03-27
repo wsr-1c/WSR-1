@@ -14,7 +14,11 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.wsr_3.R;
 
 public class notik extends AppCompatActivity {
-
+    /*
+      окно уведомлений
+      26.03.2024
+      Суриков Владислав
+       */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

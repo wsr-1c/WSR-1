@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.wsr.Home;
+
 public class signin extends AppCompatActivity {
     /*
     окно входа
@@ -57,7 +59,7 @@ public class signin extends AppCompatActivity {
         });
     }
     public void loginn(View view){
-        Intent intent = new Intent(signin.this, nav.class);
+        Intent intent = new Intent(signin.this, Home.class);
         startActivity(intent);
     }
 }
