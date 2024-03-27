@@ -14,36 +14,30 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.wsr_3.R;
 
-public class Home extends AppCompatActivity {
+public class packinfo extends AppCompatActivity {
     /*
-      домашняя
-      27.03.2024
-      Суриков Владислав
-       */
+        окно информации о посылке
+        27.03.2024
+        Суриков Владислав
+         */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final Button suc = requireViewById(R.id.button7);
+        final ImageButton back = requireViewById(R.id.imageButton10);
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home);
-        final ImageButton pro = requireViewById(R.id.imageButton4), ho = requireViewById(R.id.imageButton2), wa = requireViewById(R.id.imageButton), tr = requireViewById(R.id.imageButton3);
-        tr.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_packinfo);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, Track.class); // окно отслеживания
+                Intent intent = new Intent(packinfo.this, Track.class); //переход на страницу с отслеживанием
                 startActivity(intent);
             }
         });
-        wa.setOnClickListener(new View.OnClickListener() {
+        suc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, wallet.class); // на кошелёк
-                startActivity(intent);
-            }
-        });
-        pro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Home.this, Profile.class); // переход в профиль
+                Intent intent = new Intent(packinfo.this, succes.class); //переход на страницу оценивания и подтверждения
                 startActivity(intent);
             }
         });
