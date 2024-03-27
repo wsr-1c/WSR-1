@@ -25,8 +25,22 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
-        final ImageButton pro = requireViewById(R.id.imageButton4), ho = requireViewById(R.id.imageButton2);
+        final ImageButton pro = requireViewById(R.id.imageButton4), ho = requireViewById(R.id.imageButton2), tra = requireViewById(R.id.imageButton3), va = requireViewById(R.id.imageButton);
         final ConstraintLayout ca = requireViewById(R.id.Card), noti = requireViewById(R.id.not), log = requireViewById(R.id.logout);
+        tra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, Track.class);
+                startActivity(intent);
+            }
+        });
+        va.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, wallet.class);
+                startActivity(intent);
+            }
+        });
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
