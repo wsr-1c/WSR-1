@@ -3,6 +3,7 @@ package com.example.wsr;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -26,13 +27,24 @@ public class signin extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
         final TextView singup = requireViewById(R.id.sig);
         final TextView fass = requireViewById(R.id.fpass);
-        singup.setOnClickListener(new View.OnClickListener() {
+        final Button logb = requireViewById(R.id.loginbut);
+        logb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent = new Intent(signin.this, nav.class);
+            startActivity(intent);
+            }
+        });
+
+
+        fass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(signin.this, fogotpass.class);
                 startActivity(intent); // переход на смену пароля
             }
         });
+
         singup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,5 +57,9 @@ public class signin extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void loginn(View view){
+        Intent intent = new Intent(signin.this, nav.class);
+        startActivity(intent);
     }
 }
