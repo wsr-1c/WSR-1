@@ -17,7 +17,7 @@ import com.example.wsr_3.R;
 public class Home extends AppCompatActivity {
     /*
       домашняя
-      26.03.2024
+      27.03.2024
       Суриков Владислав
        */
     @Override
@@ -36,7 +36,7 @@ public class Home extends AppCompatActivity {
         pro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, Profile.class);
+                Intent intent = new Intent(Home.this, Profile.class); // переход в профиль
                 startActivity(intent);
             }
         });

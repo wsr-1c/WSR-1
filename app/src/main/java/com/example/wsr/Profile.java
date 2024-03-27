@@ -17,7 +17,7 @@ import com.example.wsr_3.R;
 public class Profile extends AppCompatActivity {
     /*
       окно профиля
-      26.03.2024
+      27.03.2024
       Суриков Владислав
        */
     @Override
@@ -30,28 +30,28 @@ public class Profile extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, signin.class);
+                Intent intent = new Intent(Profile.this, signin.class); //переход на окно входа
                 startActivity(intent);
             }
         });
         noti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, notik.class);
+                Intent intent = new Intent(Profile.this, notik.class); // переход на уведомления
                 startActivity(intent);
             }
         });
         ca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, addp.class);
+                Intent intent = new Intent(Profile.this, addp.class); // переход на добавление карты
                 startActivity(intent);
             }
         });
         ho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, Home.class);
+                Intent intent = new Intent(Profile.this, Home.class); //переход на домашнию
                 startActivity(intent);
             }
         });

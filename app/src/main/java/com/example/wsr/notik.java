@@ -16,7 +16,7 @@ import com.example.wsr_3.R;
 public class notik extends AppCompatActivity {
     /*
       окно уведомлений
-      26.03.2024
+      27.03.2024
       Суриков Владислав
        */
     @Override
@@ -28,7 +28,7 @@ public class notik extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(notik.this, Profile.class);
+                Intent intent = new Intent(notik.this, Profile.class); // возращение в профиль
                 startActivity(intent);
 
             }
