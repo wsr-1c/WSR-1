@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.wsr.Home;
+
 public class signup extends AppCompatActivity {
     /*
     окно регистрации
@@ -22,7 +24,14 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup);
-        final Button signinn = requireViewById(R.id.button4);
+        final Button signinn = requireViewById(R.id.button4), dome = requireViewById(R.id.Otpv);
+        dome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(signup.this, Home.class);
+                startActivity(intent);
+            }
+        });
         signinn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

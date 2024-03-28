@@ -13,6 +13,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.wsr_3.R;
+import com.example.wsr_3.signin;
+import com.example.wsr_3.signup;
 
 public class Profile extends AppCompatActivity {
     /*

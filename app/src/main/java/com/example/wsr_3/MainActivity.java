@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.wsr.Home;
+
 public class MainActivity extends AppCompatActivity {
     /*
     окно регистрации или фхода
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         singupp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, signup.class);
+                Intent intent = new Intent(MainActivity.this, Home.class);
                 startActivity(intent); // переход на регестрацию
             }
         });
