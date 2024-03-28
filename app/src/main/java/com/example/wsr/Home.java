@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -25,7 +26,15 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
+        final ConstraintLayout ch = requireViewById(R.id.cht);
         final ImageButton pro = requireViewById(R.id.imageButton4), ho = requireViewById(R.id.imageButton2), wa = requireViewById(R.id.imageButton), tr = requireViewById(R.id.imageButton3);
+        ch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Chat.class); // 28.03.2024 переход на окно чатов
+                startActivity(intent);
+            }
+        });
         tr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
